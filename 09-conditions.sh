@@ -2,7 +2,7 @@
 echo "Enter number:::"
 read NUMBER
 
-if [ $NUMBER -gt 10 ];
+if [ $NUMBER -gt 10 ]
 then
     echo "NUmber gt to 10"
 else
