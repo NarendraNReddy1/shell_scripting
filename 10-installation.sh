@@ -9,7 +9,7 @@ else
     echo "You are super user"
 fi
 
-dnf install mysql -y 
+dnf install mysqllll -y 
 
 if [ $? -ne 0 ]
 then
