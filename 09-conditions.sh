@@ -1,5 +1,5 @@
 #!/bin/bash
-echo 'Enter number:::"
+echo "Enter number:::"
 read NUMBER
 
 if($NUMBER -ge 10)  
