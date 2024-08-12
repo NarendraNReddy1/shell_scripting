@@ -18,7 +18,8 @@ echo "Pwd: $PWD"
 echo "Hostname: $HOSTNAME"
 echo "User: $USER"
 
-echo "Executing pid:$$"
-sleep 60
-echo "Executing background: $!"
+#echo "Executing pid:$$"
+#sleep 60
 sleep 60 &
+echo "Executing background: $!"
+
