@@ -1,8 +1,14 @@
 #!/bin/bash
 
 VALIDATE(){
-    echo "First parameter:$1"
-    echo "Second parameter:$2"
+    if [ $1 -ne 0 ]
+    then
+        echo "$2...FAILURE"
+        exit
+    else
+        echo "$2...SUCCESS"    
+
+    fi
 }
 
 
