@@ -12,5 +12,5 @@ fi
 
 for i in $@
 do
-    echo "All packages: $i"
+    echo "packages: $i"
 done
