@@ -10,7 +10,7 @@ else
     echo "You are super user...."
 fi
 
-for i in @
+for i in $@
 do
     echo "All packages: $i"
 done
