@@ -6,6 +6,7 @@ LOG_FILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
+Y="\e[33m]"
 
 VALIDATE(){
     if [ $1 -ne 0 ]
@@ -32,6 +33,8 @@ do
     dnf list installed $i &>>$LOG_FILE
     if [ $? -eq 0 ]
     then
-        echo "already $i installed....."
+        echo "already $i $Y installed.....SKIPPING$N"
+    else
+        echo "$i need to install"    
     fi    
 done
