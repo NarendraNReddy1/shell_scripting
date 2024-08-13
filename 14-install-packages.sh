@@ -30,6 +30,8 @@ for i in $@
 do
     echo "package to install: $i"
     dnf list installed $i &>>$LOG_FILE
-    VALIDATE $? "Installation $i"
-    
+    if [ $? -eq 0 ]
+    then
+        echo "already $i installed....."
+    fi    
 done
