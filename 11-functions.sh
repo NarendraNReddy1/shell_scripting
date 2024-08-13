@@ -6,8 +6,6 @@ SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
 LOG_FILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
 
 
-echo $SCRIPT_NAME
-
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
