@@ -35,6 +35,6 @@ do
     then
         echo -e "already $i installed.....$Y SKIPPING $N"
     else
-        echo -e "$i need to install"    
+        dnf install $i  &>>$LOG_FILE 
     fi    
 done
