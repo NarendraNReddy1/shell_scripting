@@ -4,7 +4,6 @@ user_id=$(id -u)
 TIMESTAMP=$(data +%F-%H-%M-%S)
 SCRIPT_NAME=$($0 | cut -d "." -f1)
 LOG_FILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
-LOG_FILE=/tmp/
 
 
 echo $SCRIPT_NAME
