@@ -9,6 +9,7 @@ G="\e[32m"
 N="\e[0m"
 
 echo "Script started executing at: $TIMESTAMP"
+echo $R
 
 
 
