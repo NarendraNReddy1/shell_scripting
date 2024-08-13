@@ -5,11 +5,11 @@ user_id=$(id -u)
 # SCRIPT_NAME=$($0 | cut -d "." -f1)
 # LOG_FILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
 TIMESTAMP=$(date +%F-%H-%M-%S)
-SCRIPT_NAME=$($0|cut -d "." -f1)
+SCRIPT_NAME=$ ($0 |cut -d "." -f1)
 LOG_FILE=/tmp/
 
 
-echo SCRIPT_NAME
+echo $SCRIPT_NAME
 
 VALIDATE(){
     if [ $1 -ne 0 ]
