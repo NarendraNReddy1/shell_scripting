@@ -21,6 +21,7 @@ fi
 VALIDATE()
 {
     if [ $1 -ne 0 ]
+    then
         echo "$2...$R FAILURE $N"
         exit 1
     else 
