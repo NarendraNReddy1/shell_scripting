@@ -34,10 +34,9 @@ for i in $@
 do
     echo "$i to installed"
     dnf list installed $i &>>$LOG_FILE
-    if [ $? -ne 0 ]
+    if [ $? -eq 0 ]
     then 
-        echo "$i already installed"
-     
+        echo "$i already installed"     
     else
         dnf install $i -y &>>$LOG_FILE
         VALIDATE $? "installation of $i"
