@@ -25,6 +25,7 @@ VALIDATE()
         exit 1
     else 
         echo "$2..$G SUCCESS $N"    
+    fi    
 }
 
 
