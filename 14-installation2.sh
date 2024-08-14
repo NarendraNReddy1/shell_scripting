@@ -4,6 +4,10 @@ USER_ID=$(id -u)
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
 TIMESTAMP=$(date +%F-%H-%M-%S)
 LOG_FILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
+Y="\e[33m"
 
 
 if [ $USER_ID -ne 0 ]
@@ -13,6 +17,15 @@ then
 else 
     echo "You are super user"
 fi
+
+VALIDATE()
+{
+    if [ $1 -ne 0 ]
+        echo "$2...$R FAILURE $N"
+        exit 1
+    else 
+        echo "$2..$G SUCCESS $N"    
+}
 
 
 
@@ -26,5 +39,6 @@ do
         exit 1
     else 
         dnf install $i -y  &>>$LOG_FILE  
+        VALIDATE $? "Installation of $i"
     fi
 done 
