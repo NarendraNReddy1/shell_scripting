@@ -37,8 +37,9 @@ do
     if [ $? -ne 0 ]
     then 
         echo "$i already installed"
-    fi 
+     
     else
         dnf install $i -y &>>$LOG_FILE
         VALIDATE $? "installation of $i"
+    fi    
 done
