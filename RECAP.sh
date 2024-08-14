@@ -10,4 +10,4 @@ echo "Hi $PERSON1 , Please talk to $PERSON2"
 echo $passwd
 
 echo "${movies[0]}"
-echo "${movies[@]}
+echo "${movies[@]}"
