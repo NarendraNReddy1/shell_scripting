@@ -11,3 +11,15 @@ echo $passwd
 
 echo "${movies[0]}"
 echo "${movies[@]}"
+
+echo "All: $@" #ALL
+echo "No:$#"
+echo "PID:$$"
+echo "Background PID:$!"
+echo "PWD:$PWD"
+echo "HOSTNAME:$HOSTNAME"
+
+
+
+
+
