@@ -15,6 +15,10 @@ else
     exit 1
 fi 
 
+FILES=$(find $SOURCE_DIRECTORY -name "*.log" -mtime +10)
+echo "Fies to delete:$FILES"
+
+
 
 
 
