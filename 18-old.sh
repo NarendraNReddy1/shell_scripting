@@ -13,7 +13,9 @@ then
     
 else 
     echo "$PATH does not exists"
+    exit 1
 fi
+# FILES=$(find $SOURCE_DIRECTORY -name "*.log" -mtime +10)
 
 FILES=$(find $PATH -name "*.log" -mtime +10)
 
