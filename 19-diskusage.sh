@@ -17,6 +17,6 @@ DISK_THRESHOLD=2
 
 while IFS= read -r line
 do
-    USAGE=$(DISK_USAGE | awk -F " " '{print $6F}')
+    USAGE=$($line | awk -F " " '{print $6F}')
 done <<< $DISK_USAGE
 
