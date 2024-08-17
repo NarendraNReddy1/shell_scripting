@@ -18,6 +18,11 @@ DISK_THRESHOLD=2
 while IFS= read -r line
 do
     USAGE=$(echo $line | awk -F " " '{print $6F}' | cut -d "%" -f1)
-    echo $USAGE
-done <<< $DISK_USAGE
+    FOLDER=$(echo $line | awk -F " " '{print $6F}')
+    if [ $USAGE -ge $DISK_THRESHOLD ]
+    then 
+        echo "Usage is more"
+
+    fi
+done <<< $DISK_USAGE 
 
