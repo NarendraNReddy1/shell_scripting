@@ -13,11 +13,12 @@ then
 else 
     echo "$PATH does not exists"
 fi
+
 # FILES=$(find $SOURCE_DIRECTORY -name "*.log" -mtime +10)
 FILES=$(find $PATH  -name "*.log" -mtime +10)
 
-while IFS= read -r line
-do 
-    echo $line
-done <<<$FILES
+# while IFS= read -r line
+# do 
+#     echo $line
+# done <<<$FILES
 
