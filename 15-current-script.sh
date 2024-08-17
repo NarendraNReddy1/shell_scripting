@@ -7,5 +7,4 @@ echo "Before calling the PID of current shell script:$$"
 
 #./16-other-script.sh
 
-echo "After calling other script,course::::::::::$COURSE"
 echo "After calling the PID of current shell script:$$"
