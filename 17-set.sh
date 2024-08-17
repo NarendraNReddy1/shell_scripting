@@ -1,5 +1,5 @@
 #!/bin/bash
-user_id=$(id -u)
+user_id=$(id -u) #ERR 
 
 set -e 
 
