@@ -13,9 +13,10 @@ DISK_THRESHOLD=2
 #         echo "Withing range no worries"    
 #     fi
 # done <<< $DISK_USAGE
+# $ df -hT | grep xfs | awk -F " " '{print $6F}' | cut -d "$" -f1
 
 while IFS= read -r line
 do
-    USAGE=$(DISK_USAGE | awk -F "%" '{print $6F}')
+    USAGE=$(DISK_USAGE | awk -F " " '{print $6F}')
 done <<< $DISK_USAGE
 
