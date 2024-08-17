@@ -17,6 +17,6 @@ DISK_THRESHOLD=2
 
 while IFS= read -r line
 do
-    $(echo $line | awk -F " " '{print $6F}')
+    $(echo $line | awk -F " " '{print $6F}' | cut -d "%" -f1)
 done <<< $DISK_USAGE
 
