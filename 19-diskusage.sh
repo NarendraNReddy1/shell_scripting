@@ -21,8 +21,9 @@ do
     FOLDER=$(echo $line | awk -F " " '{print $6F}')
     if [ $USAGE -ge $DISK_THRESHOLD ]
     then 
-        echo "Usage is more"
-
+        echo "$USAGE is more than $DISK_THRESHOLD for the $FOLDER"
+    else 
+        echo "No worries" 
     fi
 done <<< $DISK_USAGE 
 
