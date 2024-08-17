@@ -12,5 +12,5 @@ then
     echo "$PATH exists"
 else 
     echo "$PATH does not exists"
-done 
+fi
 
