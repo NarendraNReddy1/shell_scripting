@@ -23,7 +23,7 @@ do
     then 
         echo "$USAGE is more than $DISK_THRESHOLD for the $FOLDER"
     else 
-        echo "No worries" 
+        echo "No worries for the $FOLDER" 
     fi
 done <<< $DISK_USAGE 
 
