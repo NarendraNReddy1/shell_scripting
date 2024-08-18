@@ -7,6 +7,6 @@ vowels=0
 while IFS= read -r i
 do
     if [ $i in (aeiouAEIOU) ]
-    vowels=vowels+1
+    vowels=$vowels+1
 done <<< $str1
 echo $vowels
